@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>My Cart</title>
+    <title>Klinik Aid</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -33,53 +33,37 @@
   <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">KlinikAid</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">EBookStore</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="browseCategories.html">Categories</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li  class="active"><a href="shoppingCart.html">My Cart</a></li>
-
-              </ul>
-
-              <form class="navbar-form navbar-left" role="search" action="search.html">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Looking for a book?">
-                </div>
-                <a class="btn btn-default" href="searchResults.html" role="button">Search &raquo;</a>
-              </form>
-
-            </div>
-          </div>
-        </nav>
-
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
 
 
     <!-- Marketing messaging and featurettes
 ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
+    <!-- Wrap the rest of the page in another container to center all the content. -->    
+    <br>
     <div class="container">
       <div class="row">
         <br><br><br><br>
-        <h1><b>Find your Nearest Clinic</b></h1>
+        <h3 style="margin-left:45%">Find your Nearest Clinic</h3>
         <div class="col-sm-12 col-md-10 col-md-offset-1">
           <table class="table table-hover">
             <thead>
@@ -91,10 +75,13 @@
               <tr>
                 <td class="col-sm-8 col-md-6">
                   <div class="media">
-                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://d.gr-assets.com/books/1458288947l/28090852.jpg" style="width: 120px; height: 180px;"> </a>
+                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://maps.uottawa.ca/sites/maps.uottawa.ca/files/healthservices.jpg" style="width: 200px; height: 180px;"> </a>
                     <div class="media-body">
-                      <h4 class="media-heading">uOttawa Clinic<br>Distance: 0.2 km away<br>Working Hours: 9:00 AM - 9:00 PM<br>Wait times: 10 minutes</h4>
-                      <span>Status: </span><span class="text-success"><strong>Walk-in Open</strong></span>
+                      <h4 style="margin-left: 10%" class="media-heading">uOttawa Clinic<br><br>Distance: 0.2 km away<br><br>Working Hours: 9:00 AM - 9:00 PM<br><br>Wait times: 10 minutes</h4>
+                      <br>
+                      <div style="margin-left: 10%">
+                        <span>Status: </span><span class="text-success"><strong>Walk-in Open</strong></span>
+                      </div>
                     </div>
                   </div>
                 </td>
@@ -109,10 +96,13 @@
               <tr>
                 <td class="col-sm-8 col-md-6">
                   <div class="media">
-                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://d.gr-assets.com/books/1458288947l/28090852.jpg" style="width: 120px; height: 180px;"> </a>
+                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="https://assets.skipthewaitingroom.com/images/ClinicPictures/ON/caremedics-elmvale-manotick-caremedics-elmvale-manotick.JPG" style="width: 200px; height: 180px;"></a>
                     <div class="media-body">
-                      <h4 class="media-heading">CareMedics - McArthur Ave.<br>Distance: 6.9 km away<br>Working Hours: 9:00 AM - 5:00 PM<br>Wait times: 30 minutes</h4>
-                      <span>Status: </span><span class="text-success"><strong>Walk-in Open</strong></span>
+                      <h4 style="margin-left: 10%" class="media-heading">CareMedics - McArthur Ave.<br><br>Distance: 6.9 km away<br><br>Working Hours: 9:00 AM - 5:00 PM<br><br>Wait times: 30 minutes</h4>
+                      <br>
+                      <div style="margin-left: 10%">
+                        <span>Status: </span><span class="text-success"><strong>Walk-in Open</strong></span>
+                      </div>  
                     </div>
                   </div>
                 </td>
@@ -127,10 +117,12 @@
               <tr>
                 <td class="col-md-6">
                   <div class="media">
-                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="https://images-na.ssl-images-amazon.com/images/I/510OPhmn0oL.jpg" style="width: 120px; height: 180px;"> </a>
+                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="https://www.ctvnews.ca/polopoly_fs/1.176244.1337372324!/httpImage/image._gen/derivatives/landscape_225/image." style="width: 200px; height: 180px;"> </a>
                     <div class="media-body">
-                      <h4 class="media-heading">CareMedics - McArthur Ave.<br>Distance: 6.9 km away<br>Working Hours: 9:00 AM - 5:00 PM<br>Wait times: -</h4>
-                      <span>Status: </span><span class="text-warning"><strong>Closing very soon</strong></span>
+                      <h4 style="margin-left: 10%" class="media-heading">McArthur Family Medical Centre<br><br>Distance: 6.9 km away<br><br>Working Hours: 9:00 AM - 5:00 PM<br><br>Wait times: 40minutes</h4>
+                      <div style="margin-left: 10%">
+                        <span>Status: </span><span class="text-warning"><strong>Closing very soon</strong></span>
+                      </div>  
                     </div>
                   </div></td>
                 <td>
@@ -141,20 +133,22 @@
                   <button type="back" class="btn btn-default"><span class="glyphicon glyphicon-success"></span>Select</button>
                 </td>
               </tr>
-              <tr>
-                <td>   </td>
-                <td>   </td>
-                <td>   </td>
-                <td>
-                  <button onclick="goBack()" type="button" class="btn btn-default">
-                    Back Button
-                    <script>
-                      function goBack() {
-                        window.history.back();
-                      }
-                    </script>
-                  </button></td>
-              </tr>
+              <!--
+<tr>
+<td>   </td>
+<td>   </td>
+<td>   </td>
+<td>
+<button onclick="goBack()" type="button" class="btn btn-default">
+Back Button
+<script>
+function goBack() {
+window.history.back();
+}
+</script>
+</button></td>
+</tr>
+-->
             </tbody>
           </table>
         </div>

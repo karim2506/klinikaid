@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Klinik Aid</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <!-- NAVBAR
+================================================== -->
+  <body>
+
+    <!-- Marketing messaging and featurettes
+================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">KlinikAid</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br> 
+    <br>     
+    <h3 style="margin-left:50%">Patient Info</h3>
+    <br>
+    <form class="form-horizontal" action="/action_page.php">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="firstName">First Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="lastName">Last Name:</label>
+        <div class="col-sm-10">          
+          <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="firstName">Date of Birth:</label>
+        <div class="col-sm-10">
+          <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Password:</label>
+        <div class="col-sm-10">          
+          <input type="password" class="form-control" id="pwd" placeholder="Minimum of 8 characters" name="pwd">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="confirmPwd">Confirm Password:</label>
+        <div class="col-sm-10">          
+          <input type="password" class="form-control" id="confirmPwd" placeholder="Minimum of 8 characters" name="confirmPwd">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="ohip">OHIP/Insurance Number:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="ohip" placeholder="OHIP/Insurance Number" name="ohip">
+        </div>
+      </div>
+      <div style="text-align: center" class="form-group">        
+        <div class="col-sm-offset-1 col-sm-10">
+          <br>
+          <br>
+          <p><a style="margin-left:12%; background-color: darkgreen; width:15%; color: white" type="submit" class="btn btn-default" role="button" href="findNearestClinic.html">Find Your Clinic</a></p>
+        </div>
+      </div>
+    </form>
+
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      $(document).ready(function(){
+        var date_input=$('input[name="date"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+          format: 'mm/dd/yyyy',
+          container: container,
+          todayHighlight: true,
+          autoclose: true,
+        })
+      })
+    </script>
+  </body>
+</html>
