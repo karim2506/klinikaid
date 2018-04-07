@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>My Cart</title>
+    <title>Klinik Aid</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -33,43 +33,27 @@
   <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">KlinikAid</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="contactPage.html">About</a></li>
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">KlinikAid</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="browseCategories.html">Categories</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li  class="active"><a href="shoppingCart.html">My Cart</a></li>
-
-              </ul>
-
-              <form class="navbar-form navbar-left" role="search" action="search.html">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Looking for a book?">
-                </div>
-                <a class="btn btn-default" href="searchResults.html" role="button">Search &raquo;</a>
-              </form>
-
-            </div>
-          </div>
-        </nav>
-
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
+
 
 
     <!-- Marketing messaging and featurettes
@@ -79,7 +63,7 @@
     <div class="container">
       <div class="row">
         <br><br><br><br>
-        <h1><b>Appointment Approved</b></h1>
+        <h3 style="margin-left:40%"><b>Appointment Approved</b></h3>
         <br><br>
         <h3>
           Your appointment schedule has been approved by your selected clinic. Please be there by 11:20am.*
@@ -95,32 +79,14 @@
       </div>
       <br><br><br>
       <div style="text-align: center" class="form-group">        
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="back" class="btn btn-default">Back</button>
-            <button style="margin-left:100px" type="submit" class="btn btn-default">Sign Up & Find Your Clinic</button>
-          </div>
+        <div class="col-sm-offset-2 col-sm-10">
+          <br>
+          <br>
+          <p><a style="margin-left:-20%; background-color: darkgreen; width:15%; color: white" type="submit" class="btn btn-default" role="button" href="rating.html">Next</a></p>
         </div>
+      </div>
     </div>
 
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-
-
-
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-
-    <!-- FOOTER -->
-    <footer>
-      <p class="pull-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
 
 
     <!-- Bootstrap core JavaScript
