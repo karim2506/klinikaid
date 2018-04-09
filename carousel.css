@@ -33,6 +33,10 @@ body {
   width: auto;
 }
 
+.navbar-push {
+   padding-left: 38%;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
